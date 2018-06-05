@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1528111035 source:c:\users\fabio\desktop\projeto sapos\sapinhos\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<vector>
+	"sapos.hpp"
+	"pistas.hpp"
+	"sapos.cpp"
+	"pistas.cpp"
+
+1528107232 c:\users\fabio\desktop\projeto sapos\sapinhos\sapos.hpp
+
+1528101486 c:\users\fabio\desktop\projeto sapos\sapinhos\pistas.hpp
+
+1528107243 c:\users\fabio\desktop\projeto sapos\sapinhos\sapos.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"sapos.hpp"
+
+1528101485 c:\users\fabio\desktop\projeto sapos\sapinhos\pistas.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"pistas.hpp"
+
