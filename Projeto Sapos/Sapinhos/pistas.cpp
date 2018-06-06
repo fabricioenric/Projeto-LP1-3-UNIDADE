@@ -40,6 +40,10 @@ void Pista::setNumeroparticipantes(int numeroparticipantes){
     this->numeroparticipantes = numeroparticipantes;
 }
 
+void Pista::diminuir(){
+    this->numeroparticipantes--;
+}
+
 void Pista::corridas(){
     numerocorridas++;
 }
