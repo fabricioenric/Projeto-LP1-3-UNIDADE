@@ -60,6 +60,10 @@ void Sapo::setCapacidade(int capacidade){
     this->capacidade = capacidade;
 }
 
+void Sapo::setDistanciapercorrida(int distanciapercorrida){
+    this->distanciapercorrida = distanciapercorrida;
+}
+
 void Sapo::pular(){
     this->distanciapercorrida += incrementar();
 
@@ -68,7 +72,7 @@ void Sapo::pular(){
 
 int Sapo::incrementar(){
     srand(time(NULL));
-    int incremento = rand()%this->capacidade;
+    int incremento = rand()%this->capacidade + 1;
 
     return incremento;
 }
