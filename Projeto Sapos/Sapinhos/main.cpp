@@ -121,7 +121,7 @@ int main()
                           i = 0;
 
                         frogs[pos[i]].pular();
-                          cout << "Sapo " << frogs[pos[i]].getNome() << "[" << frogs[pos[i]] << "] pulou " << frogs[pos[i]].incrementar() << " unidades" << endl << endl;
+                          cout << "Sapo " << frogs[pos[i]].getNome() << "[" << frogs[pos[i]].getIdentificador() << "] pulou " << frogs[pos[i]].incrementar() << " unidades" << endl << endl;
 
                           if(frogs[pos[i]].getDistanciapercorrida() >= streets[pos1].getTamanho()){
                             advance(it1, pos[i]);
