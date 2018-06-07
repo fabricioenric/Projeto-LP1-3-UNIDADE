@@ -64,15 +64,20 @@ void Sapo::setDistanciapercorrida(int distanciapercorrida){
     this->distanciapercorrida = distanciapercorrida;
 }
 
-void Sapo::pular(){
-    this->distanciapercorrida += incrementar();
-
-    this->qtdpulostotal++;
+void Sapo::setQtdpulostotal(int qtdpulostotal){
+    this->qtdpulostotal = qtdpulostotal;
 }
 
-int Sapo::incrementar(){
+/**
+*  @brief Funcao pular().
+*  @return incremento, com uso de srand() e rand() para garantir aleatoriedade em seu valor.
+*/
+int Sapo::pular(){
+    this->qtdpulostotal++;
+
     srand(time(NULL));
     int incremento = rand()%this->capacidade + 1;
+    this->distanciapercorrida += incremento;
 
     return incremento;
 }
