@@ -9,7 +9,7 @@ Seção 1:
 
 *Depois, criando objetos ofstream e ifstream para a manipulacao de arquivos(escrever e ler os arquivos).
     
-int main(){
+    int main(){
                             .
                             .
                             .
@@ -39,7 +39,7 @@ int main(){
                             .
 
     return 0;
-}
+    }
 
 *Logo depois, declarando os iteradores e abrindo os arquivos para escrever:
 
