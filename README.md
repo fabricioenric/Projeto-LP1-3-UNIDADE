@@ -112,15 +112,15 @@ Seção 2:
     1)Verifica se o vector streets está vazio, se sim, não pode-se iniciar uma corrida, pois não existe pista. Caso oontrário, o usuário poderá escolher uuma pista para a corrida digitando sua posição de 0 até total-1.
     2)Verifica se o vector frogs está vazio, se sim, não pode-se iniciar uma corrida, pois não existe sapos para competir. Caso oontrário, o usuário poderá escolher sapos para a corrida digitando suas posições de 0 até total-1.(Nesse programa só é permitido para um bom funcionamento do mesmo, escolher os sapos em sequência de posições, ou seja, escolher primeiro o sapo 0, depois o sapo 1, sucessivamente e isso até o total de sapo existentes. A pista escolhida deve-se ter a capacidade de comportar exatamente em uma corrida um número igual ao total de sapos existentes no vector frogs).
     
-do{
-  siz2 = frogs.size();
-  cout << "Escolha um sapo: "; cin >> pos2;
-  pos[i] = pos2; //o vetor pos[i] armazena todas as pos2 que o jogador escolher.
+    do{
+    siz2 = frogs.size();
+    cout << "Escolha um sapo: "; cin >> pos2;
+    pos[i] = pos2; //o vetor pos[i] armazena todas as pos2 que o jogador escolher.
 
-  if(pos2 >= siz2 || pos2 < 0)
+    if(pos2 >= siz2 || pos2 < 0)
     cout << "Nao ha sapo armazenado nesta posicao" << endl << endl;
 
-  else{
+    else{
     cout << "Sapo escolhido: " << frogs[pos2].getNome() << " com o numero " << frogs[pos2].getIdentificador() << endl << endl;
       i++;
                                         }
@@ -130,15 +130,18 @@ do{
                             .
                             .
                             .
-i = 0;
-do{
-  it1 = frogs.begin();
+    
+    i = 0;
+      
+    do{
+      
+    it1 = frogs.begin();
+  
+    if(i >= streets[pos1].getNumeroparticipantes())
+        i = 0;
 
-  if(i >= streets[pos1].getNumeroparticipantes())
-  i = 0;
-
-inc = frogs[pos[i]].pular();
-cout << "Sapo " << frogs[pos[i]].getNome() << "[" << frogs[pos[i]].getIdentificador() << "] pulou " << inc << " unidade(s)" << endl << endl;
+    inc = frogs[pos[i]].pular();
+    cout << "Sapo " << frogs[pos[i]].getNome() << "[" << frogs[pos[i]].getIdentificador() << "] pulou " << inc << " unidade(s)" << endl <<      endl;
 
                           if(frogs[pos[i]].getDistanciapercorrida() >= streets[pos1].getTamanho()){
                             advance(it1, pos[i]);
@@ -163,19 +166,20 @@ cout << "Sapo " << frogs[pos[i]].getNome() << "[" << frogs[pos[i]].getIdentifica
                             .
                             .
                             .
-cout << "Campeao: " << result[0].getNome() << endl << endl;
-  result[0].ganhar();
 
-arquivoCorridas << "---------- Arquivo depois de uma corrida em " << streets[pos1].getNome() << " ----------" << endl << endl;
-  cout << "Pista escolhida: " << streets[pos1].getNome() << endl << endl;
-  arquivoCorridas << "Pista escolhida: " << streets[pos1].getNome() << endl << endl;
-  cout << "Resultado da corrida: " << endl << endl;
-  arquivoCorridas << "Resultado da corrida: " << endl << endl;
+    cout << "Campeao: " << result[0].getNome() << endl << endl;
+    result[0].ganhar();
 
-for(i = 0; i < cont; i++){
-  cout << "Na posicao " << i+1 << " esta o sapo " << result[i].getNome() << " que pulou " << result[i].getQtdpulostotal() << " vezes" << endl;
+    arquivoCorridas << "---------- Arquivo depois de uma corrida em " << streets[pos1].getNome() << " ----------" << endl << endl;
+    cout << "Pista escolhida: " << streets[pos1].getNome() << endl << endl;
+    arquivoCorridas << "Pista escolhida: " << streets[pos1].getNome() << endl << endl;
+    cout << "Resultado da corrida: " << endl << endl;
+    arquivoCorridas << "Resultado da corrida: " << endl << endl;
 
-  arquivoCorridas << "Na posicao " << i+1 << " esta o sapo " << result[i].getNome() << " que pulou " << result[i].getQtdpulostotal() << " vezes" << endl;
+    for(i = 0; i < cont; i++){
+    cout << "Na posicao " << i+1 << " esta o sapo " << result[i].getNome() << " que pulou " << result[i].getQtdpulostotal() << " vezes" << endl;
+
+    arquivoCorridas << "Na posicao " << i+1 << " esta o sapo " << result[i].getNome() << " que pulou " << result[i].getQtdpulostotal() << " vezes" << endl;
                             }
     
                             .
