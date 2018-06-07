@@ -59,7 +59,7 @@ int main(){
       cout << "5 -> Criar pista" << endl;
       cout << "6 -> Ler arquivos" << endl;
       cout << "SAIR -> Sair do programa" << endl << endl;
-}
+    }
 
 *Cria-se um ciclo do while para o usuário sempre escolher uma nova ação, logo que outra tenha terminado.
 *Existem basicamente seis opções para escolher.
