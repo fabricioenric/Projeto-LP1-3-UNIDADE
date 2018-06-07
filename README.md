@@ -13,10 +13,13 @@ int main(){
                             .
                             .
                             .
+                    
                     {Declaração de Variáveis}
+                    
                             .
                             .
                             .
+       
     vector<Sapo> frogs; ----> Vector para armazenar objetos Sapo.
     vector<Sapo> result; ----> Vector auxiliar.
     vector<Pista> streets; ----> Vector para armazenar objetos Pista.
@@ -28,7 +31,9 @@ int main(){
                             .
                             .
                             .
+                    
                     {Programa continua}
+                           
                             .
                             .
                             .
@@ -41,9 +46,11 @@ int main(){
                             .
                             .
                             .
+    
     arquivoSapos.open("Sapinhos.txt",ios::app);
     arquivoPistas.open("Pistas.txt",ios::app);
     arquivoCorridas.open("Corridas.txt",ios::app);
+    
                             .
                             .
                             .
