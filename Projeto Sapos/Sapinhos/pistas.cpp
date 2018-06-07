@@ -52,3 +52,4 @@ ostream& operator << (ostream &o, Pista &p){
     o << "Nome da pista: " << p.nome << endl << "Tamanho da pista: " << p.tamanho << endl << "Numero de participantes na pista: " << p.numeroparticipantes << endl << "Numero de corridas realizadas: " << p.numerocorridas << endl;
     return o;
 }
+
