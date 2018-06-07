@@ -240,7 +240,7 @@ Seção 2:
 *Funcionalidade 6: Esta é a leitura dos arquivos Sapinhos.txt(estatísticas dos sapos), Pistas.txt(estatísticas das pistas) e Corridas.txt(estatísticas dos ranks). Todos estes são atualizados depois de uma corrida.
   Basicamente se ler o arquivo linha por linha e imprime na tela os seus resultados:
   
-  else if(op == "6"){
+    else if(op == "6"){
         cout << "1 -> Arquivo dos sapos" << endl << "2 -> Arquivo das pistas" << endl << "3 -> Arquivo dos resultados" << endl << endl;
         cin >> op;
 
